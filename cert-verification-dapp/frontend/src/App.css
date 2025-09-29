@@ -1,0 +1,120 @@
+/* 🌟 Global Styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fff7ed, #ffe4c4);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* 🌟 Navbar */
+nav {
+  background: linear-gradient(90deg, #ff9a3d, #ff7300);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(255, 115, 0, 0.2);
+  color: white;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav button {
+  background: white;
+  color: #ff7300;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background: #fff2e6;
+  transform: scale(1.05);
+}
+
+/* 🌟 Container for Add + Verify */
+.page-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+/* 🌟 Card Style */
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(255, 115, 0, 0.15);
+  padding: 2rem;
+  max-width: 400px;
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 115, 0, 0.25);
+}
+
+.card h2 {
+  color: #ff7300;
+  margin-bottom: 1rem;
+}
+
+/* 🌟 Input Fields */
+.card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 2px solid #ffe0c2;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.card input:focus {
+  border-color: #ff7300;
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 115, 0, 0.3);
+}
+
+/* 🌟 Buttons */
+.card button {
+  background: #ff7300;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.card button:hover {
+  background: #e66000;
+  transform: scale(1.03);
+}
+
+/* 🌟 Status Messages */
+.card p {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.card p.success {
+  color: green;
+}
+
+.card p.error {
+  color: red;
+}
